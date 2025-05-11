@@ -48,8 +48,6 @@ const App = () => {
           </motion.div>
         ))}
       </div>
-
-      {/* 🌟 Main App Content */}
       <div className="relative z-10">
         <HeroSection />
         <TweetGenerator
@@ -68,8 +66,6 @@ const App = () => {
         <FeaturesSection />
         <Footer />
       </div>
-
-      {/* 🤖 Floating Robot */}
       <ThreeBot />
     </div>
   );

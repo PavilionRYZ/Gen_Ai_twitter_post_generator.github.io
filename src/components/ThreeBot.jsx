@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import robotImage from "../../public/robot.png";
+import robotImage from "/robot.png";
 
 const floatAnimation = {
   y: [0, -30, 0],

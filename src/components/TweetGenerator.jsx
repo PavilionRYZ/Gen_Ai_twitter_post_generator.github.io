@@ -11,7 +11,7 @@ const TweetGenerator = ({ setGeneratedTweet, jsConfetti, setIsGenerating }) => {
   const generateTweet = async () => {
     try {
       setIsLoading(true);
-      setIsGenerating(true); // Trigger glowing stars
+      setIsGenerating(true);
 
       const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
       const response = await axios.post(
@@ -42,7 +42,7 @@ const TweetGenerator = ({ setGeneratedTweet, jsConfetti, setIsGenerating }) => {
       setGeneratedTweet('Error generating tweet. Please try again.');
     } finally {
       setIsLoading(false);
-      setIsGenerating(false); // Stop glowing stars
+      setIsGenerating(false); 
     }
   };
 
